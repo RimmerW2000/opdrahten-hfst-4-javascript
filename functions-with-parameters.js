@@ -16,8 +16,15 @@ console.log(result);
 // ---- Verwachte uitkomsten:
 // greeter("Jan") geeft "Hoi Jan!"
 // greeter("Kees") geeft "Hoi Kees!"
+function greeter(name) {
+  return "Hoi" + name;
+}
 
+const greeting = greeter("Miranda!");
+console.log(greeting);
 
+// const greeting = greeter("Pjotter!")
+// console.log(greeting);
 
 /* Opdracht 2 */
 // Schrijf een functie genaamd minutesToSeconds, die een hoeveelheid minuten verwacht (als een getal) en teruggeeft hoeveel seconden dat zijn.
@@ -25,7 +32,18 @@ console.log(result);
 // minutesToSeconds(1) geeft 60
 // minutesToSeconds(3) geeft 180
 // minutesToSeconds(23) geeft 1380
+function minutesToSeconds(minutes){
+  return minutes * 60;
+}
 
+secondsFromMinutes = minutesToSeconds(23);
+console.log(secondsFromMinutes);
+
+secondsFromMinutes = minutesToSeconds(1);
+console.log(secondsFromMinutes)
+
+secondsFromMinutes = minutesToSeconds(3);
+console.log(secondsFromMinutes);
 
 
 /* Opdracht 3 */
@@ -34,7 +52,15 @@ console.log(result);
 // ---- Verwachte uitkomsten:
 // merge("abra", "cadabra") geeft "abracadabra"
 // merge("zoet", "sappig") geeft "zoetsappig"
+function merge(firstString, secondString){
+  return firstString + secondString;
+}
 
+merged = merge("adava", "kadavra");
+console.log(merged);
+
+merged = merge ("abra", "cadabra");
+console.log(merged);
 
 
 
@@ -43,6 +69,15 @@ console.log(result);
 // ---- Verwachte uitkomsten:
 // calculateDogYears(6) geeft "Jouw hond is 42 jaar oud in mensenjaren."
 // calculateDogYears(2) geeft "Jouw hond is 14 jaar oud in mensenjaren."
+function calculateDogYears(dogAge) {
+  const humanAge = dogAge * 7;
+  return "Jouw hond is"  + humanAge + "jaar oud in mensenjaren."
+}
+// ik krijg er geen spatie tussen bij het loggen.... hoe kan dit....
+myDogAge = calculateDogYears(6)
+console.log(myDogAge)
+myDogAge = calculateDogYears(2)
+console.log(myDogAge)
 
 
 
@@ -53,6 +88,16 @@ console.log(result);
 // wrapper("bril", "*") geeft "*bril*"
 // wrapper("beep", "_") geeft "_beep_"
 // wrapper("kaas", "Q") geeft "QkaasQ"
+function wrapper(word, character){
+  return character + word + character
+}
+
+wrapped = wrapper("brill","*")
+console.log(wrapped)
+wrapped = wrapper("beep", "_")
+console.log(wrapped)
+wrapped = wrapper("kaas", "&")
+console.log(wrapped)
 
 
 
